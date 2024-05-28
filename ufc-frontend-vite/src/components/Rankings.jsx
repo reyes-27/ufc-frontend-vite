@@ -30,8 +30,8 @@ function RankingList(){
                   <div key={i} className={fighter.champion ? "champion-ranking-spot" : "ranking-spot"}>
                     {fighter.champion ? <img src={`http://127.0.0.1:8000/${fighter.fighter.c_photo}/`} /> : null}
                     <h4>{fighter.champion ? 'Champion' : null}</h4>
-                    <h5><strong>{fighter.champion != true ? fighter.rank_number : null}</strong> {fighter.fighter.full_name}</h5>
-                    <h4>{fighter.interm_champion ? 'Interim Champion' : null}</h4>
+                  <h5><strong>{fighter.champion == false ? fighter.rank_number : null}</strong> {fighter.fighter.full_name}</h5>
+                    {/* <h4>{fighter.interm_champion ? 'IC' : null}</h4> */}
                   </div>
                 ))}
               </div>

@@ -17,7 +17,7 @@ import Root from './routes/root.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />
+    element: <FeedListPage />
   },
   {
     path: "/event/:id/",
@@ -39,10 +39,10 @@ const router = createBrowserRouter([
     path:"/rankings/",
     element: <RankingPage />,
   },
-  {
-    path:"/feed/",
-    element: <FeedListPage />,
-  },
+  // {
+  //   path:"/feed/",
+  //   element: <FeedListPage />,
+  // },
   {
     path:"/post/:id/",
     element: <FeedDetailPage />,

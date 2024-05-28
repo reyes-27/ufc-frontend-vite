@@ -9,7 +9,7 @@ export default function Root() {
 
               <Link to="/events/" className="nav-link" style={{fontSize: 20+ "px", margin: 20 + "px",}}>Events</Link>
 
-              <Link to="/feed/" className="nav-brand"><img src={UfcLogo} alt="" style={{width: 61 + "px",}} /></Link>
+              <Link to="/" className="nav-brand"><img src={UfcLogo} alt="" style={{width: 61 + "px",}} /></Link>
 
               <Link to="/rankings/" className="nav-link" style={{fontSize: 20+ "px", margin: 20 + "px",}}>Rankings</Link>
 

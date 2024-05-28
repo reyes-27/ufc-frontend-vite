@@ -27,9 +27,9 @@ function FighterHistory(){
                         <h1>{fight.name}</h1>
                         <div className="img-container">
                          {fight.comperitors.map((competitor, i) => (
-                            <div className="f_container" key={i}>
+                            <div className="f_container" key={i} style={{marginBottom:20+"px"}}>
                                <img src={`http://127.0.0.1:8000/${competitor.fighter.c_photo}/`} alt="" />
-                               {competitor.victory == true ? <h3>Victory</h3> : <h3>Loss</h3>}
+                               {competitor.victory == true ? <h3>Victory</h3> : <></>}
                             </div>
                             
                         ))}   

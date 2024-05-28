@@ -27,7 +27,7 @@ function PostDetail() {
             <img src={post.cover} alt="" className="post-cover" />
             <h1>{post.title}</h1>
             <div>{ReactHtmlParser(post.description)}</div>
-            <ReactPlayer url={post.demo} playing={false} controls={true} playIcon={true} className="video-player"  width={480} height={272} />
+            <ReactPlayer url={post.demo} playing={false} controls={true} playIcon={true} className="video-player"  width={900} height={472} />
         </div>
     ) : (
         <div>Loading...</div>
